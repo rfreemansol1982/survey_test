@@ -8,8 +8,7 @@
 {"node":5,"name":"File Sharing"},
 {"node":6,"name":"WordPress"},
 {"node":7,"name":"OnBase"},
-{"node":8,"name":"Outlook"},
-{"node":9,"name":"Other"}
+{"node":8,"name":"Outlook"}
 ],
 "links":[
 {"source":0,"target":1,"value":4},

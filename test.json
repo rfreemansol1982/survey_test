@@ -5,15 +5,16 @@
 {"node":2,"name":"MailChimp"},
 {"node":3,"name":"KidzWizz"},
 {"node":4,"name":"File Sharing"}
-{"node":5,"name":"SchoolBox"}
-{"node":6,"name":"Outlook"}
-{"node":7,"name":"Other"}
-{"node":8,"name":"WordPress"}
+{"node":5,"name":"WordPress"}
+{"node":6,"name":"SchoolBox"}
+{"node":7,"name":"Outlook"}
+{"node":8,"name":"Other"}
+
 ],
 "links":[
-{"source":0,"target":5,"value":2},
-{"source":1,"target":5,"value":1},
-{"source":2,"target":6,"value":1},
-{"source":3,"target":7,"value":1},
-{"source":8,"target":5,"value":1},
+{"source":0,"target":6,"value":2},
+{"source":1,"target":6,"value":1},
+{"source":2,"target":7,"value":1},
+{"source":3,"target":8,"value":1},
+{"source":5,"target":6,"value":1},
 ]}

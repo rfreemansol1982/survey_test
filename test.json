@@ -1,12 +1,14 @@
 {
 "nodes":[
 {"node":0,"name":"Synergetic"},
-{"node":1,"name":"SchoolBox"},
-{"node":2,"name":"WordPress"},
-{"node":3,"name":"Microsoft Office"}
+{"node":1,"name":"MailChimp"},
+{"node":2,"name":"SchoolBox"},
+{"node":3,"name":"WordPress"},
+{"node":4,"name":"Microsoft Office"}
 ],
 "links":[
-{"source":0,"target":1,"value":4},
-{"source":1,"target":2,"value":2},
-{"source":1,"target":3,"value":2}
+{"source":0,"target":2,"value":4},
+{"source":1,"target":4,"value":2},
+{"source":2,"target":3,"value":2},
+{"source":2,"target":4,"value":2}
 ]}

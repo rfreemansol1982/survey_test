@@ -1,0 +1,17 @@
+{
+"nodes":[
+{"node":0,"name":"Synergetic"},
+{"node":1,"name":"Star"},
+{"node":2,"name":"iWise"},
+{"node":3,"name":"Portal"},
+{"node":4,"name":"iTelegraph"},
+{"node":5,"name":"CMSApp"},
+{"node":6,"name":"Outlook"},
+{"node":7,"name":"Formstack"}
+],
+"links":[
+{"source":0,"target":2,"value":1},
+{"source":1,"target":6,"value":1},
+{"source":2,"target":3,"value":1},
+{"source":3,"target":5,"value":1}
+]}

@@ -6,7 +6,8 @@
 {"node":3,"name":"Outlook"},
 {"node":4,"name":"Portal"},
 {"node":5,"name":"iTelegraph"},
-{"node":6,"name":"CMSApp"} 
+{"node":5,"name":"Outlook"},
+{"node":6,"name":"CMSApp"}  
 ],
 "links":[
 {"source":0,"target":2,"value":4},
@@ -16,5 +17,6 @@
 {"source":2,"target":4,"value":1},
 {"source":3,"target":4,"value":1},
 {"source":4,"target":5,"value":3},
-{"source":4,"target":6,"value":6}  
+{"source":4,"target":6,"value":6},
+{"source":5,"target":6,"value":6}  
 ]}

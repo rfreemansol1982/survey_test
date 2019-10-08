@@ -12,7 +12,8 @@
 {"source":"Microsoft Office","target":"Reporting","value":"19"},
 {"source":"Application doesn't do what I need","target":"Make available to parents","value":"5"}, 
 {"source":"SharePoint","target":"Make available to staff","value":"5"},
-{"source":"WordPress","target":"Make available to parents","value":"5"}  
+{"source":"WordPress","target":"Make available to parents","value":"5"},  
+{"source":"Synergetic","target":"Reporting","value":"3"}    
 ] ,
 "nodes": [
 {"name":"Schoolbox"},

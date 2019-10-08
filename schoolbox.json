@@ -10,7 +10,7 @@
 {"node":7,"name":"Make available for students"},
 {"node":8,"name":"WordPress"},
 {"node":9,"name":"Reporting"},
-{"node":9,"name":"Make available for parents"}
+{"node":10,"name":"Make available for parents"}
 ],
 "links":[
 {"source":0,"target":1,"value":3},

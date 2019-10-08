@@ -1,16 +1,16 @@
 {
 "nodes":[
-{"node":0,"name":"SchoolBox"},
-{"node":1,"name":"Synergetic"},
-{"node":2,"name":"TrackOne"},
-{"node":3,"name":"Microsoft Office"},
-{"node":4,"name":"Edit and meet outcomes not possible"},
-{"node":5,"name":"SharePoint"},
-{"node":6,"name":"Make available to staff"},
-{"node":7,"name":"Make available for students"},
-{"node":8,"name":"WordPress"},
-{"node":9,"name":"Reporting"},
-{"node":10,"name":"Make available for parents"}
+{]"name":"SchoolBox"},
+{"name":"Synergetic"},
+{"name":"TrackOne"},
+{"name":"Microsoft Office"},
+{"name":"Edit and meet outcomes not possible"},
+{"name":"SharePoint"},
+{"name":"Make available to staff"},
+{"name":"Make available for students"},
+{"name":"WordPress"},
+{"name":"Reporting"},
+{"name":"Make available for parents"}
 ],
 "links":[
 {"source":0,"target":1,"value":3},

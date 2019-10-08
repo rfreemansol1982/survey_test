@@ -1,0 +1,29 @@
+{
+"nodes":[
+{"node":0,"name":"SchoolBox"},
+{"node":1,"name":"Synergetic"},
+{"node":2,"name":"TrackOne"},
+{"node":3,"name":"Microsoft Office"},
+{"node":4,"name":"Edit and meet outcomes not possible"},
+{"node":5,"name":"SharePoint"},
+{"node":6,"name":"Make available to staff"},
+{"node":7,"name":"Make available for students"},
+{"node":8,"name":"WordPress"},
+{"node":9,"name":"Reporting"},
+{"node":9,"name":"Make available for parents"}
+],
+"links":[
+{"source":0,"target":1,"value":3},
+{"source":0,"target":2,"value":5},
+{"source":0,"target":3,"value":33},
+{"source":0,"target":5,"value":6},
+{"source":0,"target":8,"value":5},
+{"source":2,"target":4,"value":4},
+{"source":3,"target":4,"value":5},
+{"source":3,"target":6,"value":8},
+{"source":3,"target":7,"value":5},
+{"source":3,"target":9,"value":19},
+{"source":4,"target":10,"value":5},
+{"source":5,"target":6,"value":5},
+{"source":8,"target":10,"value":5},
+]}

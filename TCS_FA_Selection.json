@@ -2,8 +2,8 @@
 "links": [
 {"source":"School Leadership","target":"Spider R1","value":"2"},
 {"source":"School Leadership","target":"PcSchool R1","value":"2"},
-{"source":"School Leadership","target":"Moodle","value":"3"},
-{"source":"School Leadership","target":"Seesaw","value":"2"},
+{"source":"School Leadership","target":"Moodle R1","value":"3"},
+{"source":"School Leadership","target":"Seesaw R1","value":"2"},
 {"source":"School Leadership","target":"W Drive R1","value":"1"},
 {"source":"School Leadership","target":"School Phone System R1","value":"1"},
 {"source":"School Leadership","target":"Outlook R1","value":"4"},
@@ -72,6 +72,5 @@
 {"name":"OneDrive R3"},
 {"name":"OneNote R3"},
 {"name":"Outlook R3"},  
-{"name":"W Drive R3"},
-{"name":"School Phone System R3"}
+{"name":"W Drive R3"}
 ] }

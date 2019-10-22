@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+    <title>TCS Applications Ratings</title>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+      
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        fill: #242424;
+        text-align: center;
+        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+        cursor: default;
+      }
+      
+      .legend {
+        font-family: 'Raleway', sans-serif;
+        fill: #333333;
+      }
+      
+      .tooltip {
+        fill: #333333;
+      }
+      #parent {
+                list-style: none;
+                width:95%;
+                height: 20px;
+                overflow-y: hidden;
+                font-size: 10px;
+                text-shadow: none;
+                color: white;
+                text-align: center;
+
+            }
+
+            #parent > li {
+                display: inline-block;
+                width: auto;
+                padding-top: 3px;
+                padding-bottom: 2px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-right:2px;
+                margin-left:2px;
+                height: 100%;
+            }
+            #Teach {
+                background-color:#0082C8
+            }
+            #Lead {
+                background-color:#FF6971
+            }
+            #Support {
+                background-color:#FF9900
+            }
+            #Finance {
+                background-color:#40C14A
+            }
+            #ICT {
+                background-color:#800080
+            }
+    </style>	
+
+    <script>
+    var data1 = [
+        {
+          "key": "Teaching staff",
+          "values": [
+            {axis:"PC School",value:2.8},
+            {axis:"Spider",value:3.6},
+            {axis:"Timetabler",value:0.4},
+            {axis:"Moodle",value:2.7},
+            {axis:"Seesaw",value:3.7},
+            {axis:"OneDrive",value:3},
+            {axis:"OneNote",value:2.2},
+            {axis:"PowerPoint",value:3.7},
+            {axis:"Word",value:4.5},
+            {axis:"Pages",value:2},
+            {axis:"iMovie",value:2},
+            {axis:"Piccollage",value:1.6},
+            {axis:"Creative Tools",value:0.7},
+            {axis:"Book Creator",value:1.8},
+            {axis:"W Drive",value:3.2},
+            {axis:"Smart Library",value:2.3},
+            {axis:"Remind App",value:1.3},
+            {axis:"Complispace",value:3.1}		
+          ]
+        },
+        {
+          "key": "Leadership",
+          "values": [
+            {axis:"PC School",value:2.8},
+            {axis:"Spider",value:3.3},
+            {axis:"Timetabler",value:1.1},
+            {axis:"Moodle",value:3},
+            {axis:"Seesaw",value:2.5},
+            {axis:"OneDrive",value:2.9},
+            {axis:"OneNote",value:2.7},
+            {axis:"PowerPoint",value:4.3},
+            {axis:"Word",value:4.4},
+            {axis:"Pages",value:1.4},
+            {axis:"iMovie",value:2},
+            {axis:"Piccollage",value:0.7},
+            {axis:"Creative Tools",value:0.6},
+            {axis:"Book Creator",value:1.2},
+            {axis:"W Drive",value:2.8},
+            {axis:"Smart Library",value:1.4},
+            {axis:"Remind App",value:1.8},
+            {axis:"Complispace",value:2.4}
+            ]
+        },
+        {
+          "key": "Student support",
+          "values": [
+            {axis:"PC School",value:2.3},
+            {axis:"Spider",value:1.7},
+            {axis:"Timetabler",value:0},
+            {axis:"Moodle",value:1.7},
+            {axis:"Seesaw",value:3.7},
+            {axis:"OneDrive",value:1.3},
+            {axis:"OneNote",value:1.3},
+            {axis:"PowerPoint",value:2.7},
+            {axis:"Word",value:3.3},
+            {axis:"Pages",value:1},
+            {axis:"iMovie",value:1},
+            {axis:"Piccollage",value:1.3},
+            {axis:"Creative Tools",value:1},
+            {axis:"Book Creator",value:2},
+            {axis:"W Drive",value:3},
+            {axis:"Smart Library",value:1},
+            {axis:"Remind App",value:2},
+            {axis:"Complispace",value:2}
+            ]
+        },
+        {
+          "key": "Finance, Admin, Ops",
+          "values": [
+            {axis:"PC School",value:3.4},
+            {axis:"Spider",value:2.9},
+            {axis:"Timetabler",value:0.2},
+            {axis:"Moodle",value:1.9},
+            {axis:"Seesaw",value:1.8},
+            {axis:"OneDrive",value:3},
+            {axis:"OneNote",value:1.4},
+            {axis:"PowerPoint",value:3.6},
+            {axis:"Word",value:4.2},
+            {axis:"Pages",value:0.8},
+            {axis:"iMovie",value:1.4},
+            {axis:"Piccollage",value:0},
+            {axis:"Creative Tools",value:0.6},
+            {axis:"Book Creator",value:0},
+            {axis:"W Drive",value:3.4},
+            {axis:"Smart Library",value:1.2},
+            {axis:"Remind App",value:1.2},
+            {axis:"Complispace",value:3.3}
+            ]
+        },
+        {
+          "key": "ICT",
+          "values": [
+            {axis:"PC School",value:3.3},
+            {axis:"Spider",value:3.7},
+            {axis:"Timetabler",value:1.5},
+            {axis:"Moodle",value:3.3},
+            {axis:"Seesaw",value:1},
+            {axis:"OneDrive",value:3.5},
+            {axis:"OneNote",value:4},
+            {axis:"PowerPoint",value:1.5},
+            {axis:"Word",value:4},
+            {axis:"Pages",value:0},
+            {axis:"iMovie",value:0},
+            {axis:"Piccollage",value:0},
+            {axis:"Creative Tools",value:0},
+            {axis:"Book Creator",value:0},
+            {axis:"W Drive",value:4},
+            {axis:"Smart Library",value:2},
+            {axis:"Remind App",value:2},
+            {axis:"Complispace",value:3.3}
+            ]
+        }
+      ];  
+
+      var data2 = [
+        {
+          "key": "Teaching staff",
+          "values": [
+            {axis:"PC School",value:2.4},
+            {axis:"Spider",value:4.5},
+            {axis:"Timetabler",value:0.2},
+            {axis:"Moodle",value:2.9},
+            {axis:"Seesaw",value:3.1},
+            {axis:"OneDrive",value:2.6},
+            {axis:"OneNote",value:1.6},
+            {axis:"PowerPoint",value:2.5},
+            {axis:"Word",value:4.6},
+            {axis:"Pages",value:0.9},
+            {axis:"iMovie",value:0.6},
+            {axis:"Piccollage",value:0.7},
+            {axis:"Creative Tools",value:0.3},
+            {axis:"Book Creator",value:0.6},
+            {axis:"W Drive",value:4.1},
+            {axis:"Smart Library",value:1.3},
+            {axis:"Remind App",value:0.7},
+            {axis:"Complispace",value:0.8}		
+            ]
+        },
+        {
+          "key": "Leadership",
+          "values": [
+            {axis:"PC School",value:2.9},
+            {axis:"Spider",value:4.7},
+            {axis:"Timetabler",value:0.8},
+            {axis:"Moodle",value:4},
+            {axis:"Seesaw",value:2.1},
+            {axis:"OneDrive",value:3},
+            {axis:"OneNote",value:2.2},
+            {axis:"PowerPoint",value:3.4},
+            {axis:"Word",value:4.7},
+            {axis:"Pages",value:1.3},
+            {axis:"iMovie",value:0.7},
+            {axis:"Piccollage",value:0.3},
+            {axis:"Creative Tools",value:0.4},
+            {axis:"Book Creator",value:0.5},
+            {axis:"W Drive",value:4.8},
+            {axis:"Smart Library",value:1.4},
+            {axis:"Remind App",value:0.7},
+            {axis:"Complispace",value:0.9}
+            ]
+        },
+        {
+          "key": "Student support",
+          "values": [
+            {axis:"PC School",value:0.2},
+            {axis:"Spider",value:1.3},
+            {axis:"Timetabler",value:0},
+            {axis:"Moodle",value:0.7},
+            {axis:"Seesaw",value:0.3},
+            {axis:"OneDrive",value:0.3},
+            {axis:"OneNote",value:0.3},
+            {axis:"PowerPoint",value:0.7},
+            {axis:"Word",value:3.3},
+            {axis:"Pages",value:0},
+            {axis:"iMovie",value:0},
+            {axis:"Piccollage",value:0.3},
+            {axis:"Creative Tools",value:0},
+            {axis:"Book Creator",value:0},
+            {axis:"W Drive",value:2},
+            {axis:"Smart Library",value:0},
+            {axis:"Remind App",value:0},
+            {axis:"Complispace",value:0.3}
+            ]
+        },
+        {
+          "key": "Finance, Admin, Ops",
+          "values": [
+            {axis:"PC School",value:3.7},
+            {axis:"Spider",value:4.3},
+            {axis:"Timetabler",value:0},
+            {axis:"Moodle",value:1.1},
+            {axis:"Seesaw",value:0.6},
+            {axis:"OneDrive",value:1.7},
+            {axis:"OneNote",value:0.3},
+            {axis:"PowerPoint",value:0.8},
+            {axis:"Word",value:4.5},
+            {axis:"Pages",value:0.3},
+            {axis:"iMovie",value:0.2},
+            {axis:"Piccollage",value:0.1},
+            {axis:"Creative Tools",value:0},
+            {axis:"Book Creator",value:0},
+            {axis:"W Drive",value:5},
+            {axis:"Smart Library",value:0.5},
+            {axis:"Remind App",value:0.7},
+            {axis:"Complispace",value:1.1}
+            ]
+        },
+        {
+          "key": "ICT",
+          "values": [
+            {axis:"PC School",value:3},
+            {axis:"Spider",value:4},
+            {axis:"Timetabler",value:0},
+            {axis:"Moodle",value:3},
+            {axis:"Seesaw",value:0.3},
+            {axis:"OneDrive",value:2.3},
+            {axis:"OneNote",value:2.3},
+            {axis:"PowerPoint",value:0.7},
+            {axis:"Word",value:3},
+            {axis:"Pages",value:0.3},
+            {axis:"iMovie",value:0.3},
+            {axis:"Piccollage",value:0},
+            {axis:"Creative Tools",value:0},
+            {axis:"Book Creator",value:0},
+            {axis:"W Drive",value:4},
+            {axis:"Smart Library",value:0.7},
+            {axis:"Remind App",value:1.7},
+            {axis:"Complispace",value:1}
+          ]
+        }
+      ];
+
+      var data3 = [
+        {
+          "key": "Teaching staff",
+          "values": [
+            {axis:"PC School",value:2.7},
+            {axis:"Spider",value:3.1},
+            {axis:"Timetabler",value:0.4},
+            {axis:"Moodle",value:2.4},
+            {axis:"Seesaw",value:2.8},
+            {axis:"OneDrive",value:2.3},
+            {axis:"OneNote",value:1.8},
+            {axis:"PowerPoint",value:3.3},
+            {axis:"Word",value:3.8},
+            {axis:"Pages",value:1.9},
+            {axis:"iMovie",value:1.6},
+            {axis:"Piccollage",value:1.3},
+            {axis:"Creative Tools",value:0.6},
+            {axis:"Book Creator",value:1.4},
+            {axis:"W Drive",value:3.5},
+            {axis:"Smart Library",value:1.8},
+            {axis:"Remind App",value:1.3},
+            {axis:"Complispace",value:2.2}		
+          ]
+        },
+        {
+          "key": "Leadership",
+          "values": [
+            {axis:"PC School",value:3.5},
+            {axis:"Spider",value:3.3},
+            {axis:"Timetabler",value:1},
+            {axis:"Moodle",value:3.2},
+            {axis:"Seesaw",value:1.9},
+            {axis:"OneDrive",value:2.5},
+            {axis:"OneNote",value:2.4},
+            {axis:"PowerPoint",value:3.7},
+            {axis:"Word",value:3.9},
+            {axis:"Pages",value:1.5},
+            {axis:"iMovie",value:1.7},
+            {axis:"Piccollage",value:0.3},
+            {axis:"Creative Tools",value:0.6},
+            {axis:"Book Creator",value:1},
+            {axis:"W Drive",value:4.2},
+            {axis:"Smart Library",value:1.3},
+            {axis:"Remind App",value:1.3},
+            {axis:"Complispace",value:2}
+          ]
+        },
+        {
+          "key": "Student support",
+          "values": [
+            {axis:"PC School",value:1.7},
+            {axis:"Spider",value:1.3},
+            {axis:"Timetabler",value:0},
+            {axis:"Moodle",value:1.7},
+            {axis:"Seesaw",value:1.3},
+            {axis:"OneDrive",value:0.3},
+            {axis:"OneNote",value:0.3},
+            {axis:"PowerPoint",value:2.7},
+            {axis:"Word",value:3.3},
+            {axis:"Pages",value:0.3},
+            {axis:"iMovie",value:0.3},
+            {axis:"Piccollage",value:2.3},
+            {axis:"Creative Tools",value:0.3},
+            {axis:"Book Creator",value:0.7},
+            {axis:"W Drive",value:2},
+            {axis:"Smart Library",value:0.3},
+            {axis:"Remind App",value:0.3},
+            {axis:"Complispace",value:1}
+          ]
+        },
+        {
+          "key": "Finance, Admin, Ops",
+          "values": [
+            {axis:"PC School",value:2.7},
+            {axis:"Spider",value:2.6},
+            {axis:"Timetabler",value:0.2},
+            {axis:"Moodle",value:1.3},
+            {axis:"Seesaw",value:1},
+            {axis:"OneDrive",value:1.9},
+            {axis:"OneNote",value:1},
+            {axis:"PowerPoint",value:2.9},
+            {axis:"Word",value:3.3},
+            {axis:"Pages",value:0.8},
+            {axis:"iMovie",value:0.7},
+            {axis:"Piccollage",value:0.5},
+            {axis:"Creative Tools",value:0.7},
+            {axis:"Book Creator",value:0.3},
+            {axis:"W Drive",value:3.3},
+            {axis:"Smart Library",value:1},
+            {axis:"Remind App",value:1.1},
+            {axis:"Complispace",value:2.7}
+          ]
+        },
+        {
+          "key": "ICT",
+          "values": [
+            {axis:"PC School",value:2.7},
+            {axis:"Spider",value:3},
+            {axis:"Timetabler",value:2},
+            {axis:"Moodle",value:2.7},
+            {axis:"Seesaw",value:2},
+            {axis:"OneDrive",value:3.5},
+            {axis:"OneNote",value:4},
+            {axis:"PowerPoint",value:2.5},
+            {axis:"Word",value:4},
+            {axis:"Pages",value:1.5},
+            {axis:"iMovie",value:1.5},
+            {axis:"Piccollage",value:0},
+            {axis:"Creative Tools",value:0},
+            {axis:"Book Creator",value:1.5},
+            {axis:"W Drive",value:3.3},
+            {axis:"Smart Library",value:2},
+            {axis:"Remind App",value:2},
+            {axis:"Complispace",value:3}
+          ]
+        }
+      ];
+    
+    </script>
+	</head>
+	<body>
+		<form>
+      <label style="padding: 15px;"><input type="radio" name="data" value="data1" checked onclick="update(data1)" /> Usefulness for your work</label>
+      <label style="padding: 15px;"><input type="radio" name="data" value="data2" onclick="update(data2)" /> Frequency of use</label>
+      <label style="padding: 15px;"><input type="radio" name="data" value="data3" onclick="update(data3)" /> Your knowledge</label>
+    </form>
+
+    <div class="radarChart"></div>
+    
+            <ul id="parent">
+                <li id="Teach">Teaching Staff</li>
+                <li id="Lead">Leadership</li>
+                <li id="Support">Student Support Staff</li>
+                <li id="Finance">Finance, Admin and Operations</li>
+                <li id="ICT">ICT Staff</li>
+            </ul>
+
+		<script src="radarChart.js"></script>	
+		<script>
+      /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
+
+			////////////////////////////////////////////////////////////// 
+			//////////////////// Draw the Chart ////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var color = d3.scale.ordinal()
+				.range(["#0082C8","#FF6971","#FF9900","#40C14A","#800080"]);
+      
+      radarChart = RadarChart();
+      d3.select(".radarChart").call(radarChart);
+
+      radarChart.options({'legend': {display: true}});
+      radarChart.data(data1).duration(500).update();
+
+			// Initialize the plot with the first dataset
+			// A function that create / update the plot for a given variable:
+			function update(data) {
+        radarChart.data(data).duration(500).update();        
+			}
+
+
+		</script>
+		
+	</body>
+</html>

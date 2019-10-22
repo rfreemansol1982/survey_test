@@ -1,7 +1,7 @@
 {
 "links": [
 {"source":"Spider","target":"Outlook","value":"5"},
-{"source":"Spider","target":"TPcSchool","value":"6"},
+{"source":"Spider","target":"PcSchool","value":"6"},
 {"source":"Spider","target":"W Drive","value":"4"},
 {"source":"Spider","target":"Word","value":"1"},
 {"source":"Spider","target":"Excel","value":"5"},

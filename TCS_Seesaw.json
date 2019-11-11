@@ -1,0 +1,31 @@
+{
+"links": [
+{"source":"PcSchool","target":"Spider","value":"12"},
+{"source":"PcSchool","target":"Moodle","value":"1"},
+{"source":"PcSchool","target":"Application not listed","value":"6"},
+{"source":"PcSchool","target":"Excel","value":"3"},
+{"source":"PcSchool","target":"Outlook","value":"4"},
+{"source":"PcSchool","target":"Academic reporting","value":"26"},  
+{"source":"Spider","target":"Academic reporting","value":"3"},
+{"source":"Spider","target":"Manage school activity","value":"3"},
+{"source":"Spider","target":"Lack of application functionality","value":"6"},
+{"source":"Moodle","target":"Manage school activity","value":"1"},
+{"source":"Outlook","target":"Manage school activity","value":"4"},
+{"source":"Excel","target":"Lack of application functionality","value":"3"},
+{"source":"Application not listed","target":"Lack of application functionality","value":"6"},
+{"source":"Lack of application functionality","target":"Manage school activity","value":"9"},
+{"source":"Academic reporting","target":"Make available for parents","value":"3"}
+] ,
+"nodes": [
+{"name":"PcSchool"},
+{"name":"Outlook"},
+{"name":"Spider"},
+{"name":"Moodle"},
+{"name":"Word"},
+{"name":"Excel"},
+{"name":"Application not listed"},  
+{"name":"Academic reporting"}, 
+{"name":"Manage school activity"},  
+{"name":"Lack of application functionality"},  
+{"name":"Make available for parents"}
+] }

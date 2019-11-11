@@ -3,7 +3,7 @@
 {"source":"Spider","target":"Outlook","value":"5"},
 {"source":"Spider","target":"PcSchool","value":"6"},
 {"source":"Spider","target":"W Drive","value":"4"},
-{"source":"Spider","target":"Word","value":"1"},
+{"source":"Spider","target":"Word","value":"1","purpose":"Permission to publish"},
 {"source":"Spider","target":"Excel","value":"5"},
 {"source":"Spider","target":"Application not listed","value":"32"},
 {"source":"Outlook","target":"School reporting","value":"2"},

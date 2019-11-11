@@ -14,7 +14,7 @@
 {"source":"Application not listed","target":"The application doesn't do what I need","value":"6"},
 {"source":"The application doesn't do what I need","target":"Manage school activity","value":"9"},
 {"source":"PcSchool","target":"Academic reporting","value":"3"},
-{"source":"Academic reporting","target":"To make avaialbe for parents","value":"3"},
+{"source":"Academic reporting","target":"To make available for parents","value":"3"},
 ] ,
 "nodes": [
 {"name":"PcSchool"},

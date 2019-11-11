@@ -29,5 +29,6 @@
 {"name":"Academic reporting"},
 {"name":"School reporting"},  
 {"name":"Make available for staff"},
-{"name":"Manage school activity"}
+{"name":"Manage school activity"},
+{"name":"Permission to publish"}  
 ] }

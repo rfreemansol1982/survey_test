@@ -1,10 +1,11 @@
 {
 "links": [
-{"source":"PcSchool","target":"Spider","value":"41"},
+{"source":"PcSchool","target":"Spider","value":"12"},
 {"source":"PcSchool","target":"Moodle","value":"1"},
 {"source":"PcSchool","target":"Application not listed","value":"6"},
 {"source":"PcSchool","target":"Excel","value":"3"},
 {"source":"PcSchool","target":"Outlook","value":"4"},
+{"source":"PcSchool","target":"Academic reporting","value":"26"},  
 {"source":"Spider","target":"Academic reporting","value":"3"},
 {"source":"Spider","target":"Manage school activity","value":"3"},
 {"source":"Spider","target":"Lack of application functionality","value":"6"},
@@ -13,8 +14,7 @@
 {"source":"Excel","target":"Lack of application functionality","value":"3"},
 {"source":"Application not listed","target":"Lack of application functionality","value":"6"},
 {"source":"Lack of application functionality","target":"Manage school activity","value":"9"},
-{"source":"PcSchool","target":"Academic reporting","value":"3"},
-{"source":"Academic reporting","target":"To make available for parents","value":"3"},
+{"source":"Academic reporting","target":"Make available for parents","value":"3"},
 ] ,
 "nodes": [
 {"name":"PcSchool"},

@@ -54,15 +54,15 @@ tcs.assessment.DirtySprite,8833
 tcs.assessment.LineSprite,1732
 tcs.assessment.RectSprite,3623
 tcs.assessment.TextSprite,10066
-tcs.student administration,
-tcs.student administration.DragForce,1082
-tcs.student administration.GravityForce,1336
-tcs.student administration.IForce,319
-tcs.student administration.NBodyForce,10498
-tcs.student administration.Particle,2822
-tcs.student administration.Simulation,9983
-tcs.student administration.Spring,2213
-tcs.student administration.SpringForce,1681
+tcs.student_administration,
+tcs.student_administration.DragForce,1082
+tcs.student_administration.GravityForce,1336
+tcs.student_administration.IForce,319
+tcs.student_administration.NBodyForce,10498
+tcs.student_administration.Particle,2822
+tcs.student_administration.Simulation,9983
+tcs.student_administration.Spring,2213
+tcs.student_administration.SpringForce,1681
 ,
 ,
 ,

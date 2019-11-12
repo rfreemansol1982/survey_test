@@ -25,7 +25,7 @@
 {"name":"tcs.spider.Pause","size":449,"imports":["tcs.spider.Transition"]},
 {"name":"tcs.spider.Scheduler","size":5593,"imports":["tcs.spider.ISchedulable"]},
 {"name":"tcs.spider.Sequence","size":5534,"imports":["tcs.spider.Easing","tcs.spider.Transition"]},
-{"name":"tcs.spider.Transition","size":9201,"imports":["tcs.spider.Transitioner","tcs.spider.TransitionEvent","tcs.spider.Scheduler","tcs.spider.Pause","tcs.spider.Parallel","tcs.spider.Easing","tcs.spider.Sequence","tcs.spider.ISchedulable","tcs.util.Maths","tcs.spider.Tween"]},
+{"name":"tcs.spider.Transition","size":9201,"imports":["tcs.spider.Transitioner","tcs.spider.TransitionEvent","tcs.spider.Scheduler","tcs.spider.Pause","tcs.spider.Parallel","tcs.spider.Easing","tcs.spider.Sequence","tcs.spider.ISchedulable","tcs.spider.Tween"]},
 {"name":"tcs.spider.Transitioner","size":19975,"imports":[]},
 {"name":"tcs.spider.TransitionEvent","size":1116,"imports":["tcs.spider.Transition"]},
 {"name":"tcs.spider.Tween","size":6006,"imports":["tcs.spider.Transitioner","tcs.spider.Transition","tcs.spider.interpolate.Interpolator","tcs.outlook.converters.JSONConverter"]},

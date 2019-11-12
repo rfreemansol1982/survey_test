@@ -1,4 +1,6 @@
 [
-{"name":"flare.pcschool.reporting.Entering_Results","size":45,"imports":["flare.excel.Recording_Results","flare.spider.reporting.Making_Available_to_Parents","flare.word.reporting.Recording_Results"]},
-{"name":"flare.spider.reporting.Making_Available_to_Parents","size":100,"imports":["flare.excel.Recording_Results","flare.word.reporting.Recording_Results"]}
+{"name":"flare.pcschool.reporting.Entering_Results","size":45,"imports":
+["flare.excel.reporting.Recording_Results","flare.spider.reporting.Making_Available_to_Parents","flare.word.reporting.Recording_Results"]},
+{"name":"flare.spider.reporting.Making_Available_to_Parents","size":100,"imports":
+["flare.excel.reporting.Recording_Results","flare.word.reporting.Recording_Results"]}
 ]

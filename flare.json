@@ -60,7 +60,7 @@
    ]
   },
   {
-   "name": "data",
+   "name": "dat",
    "children": [
     {
      "name": "converters",

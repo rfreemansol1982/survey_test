@@ -13,8 +13,7 @@
 {"source":"Excel","target":"Academic reporting","value":"5"},
 {"source":"W Drive","target":"Make available for staff","value":"3"},
 {"source":"Word","target":"Make available for my Department","value":"4"},
-{"source":"Word","target":"Make available for students","value":"3"},  
-{"source":"OneDrive","target":"Manage school activity","value":"7"} 
+{"source":"Word","target":"Make available for students","value":"3"}
 ] ,
 "nodes": [
 {"name":"Moodle"},

@@ -28,14 +28,14 @@
 {"source":"Application not listed","target":"The application doesn't do what I need it to","value":"2"},
 {"source":"TASS","target":"Compliance reporting","value":"5"},
 {"source":"TASS","target":"Academic reporting","value":"3"},
-{"source":"TASS","target":"Make avaiable for parents","value":"5"},
-{"source":"TASS","target":"Make avaiable for staff","value":"3"},
-{"source":"Teacher Kiosk","target":"Make avaiable for staff","value":"3"},
+{"source":"TASS","target":"Make available for parents","value":"5"},
+{"source":"TASS","target":"Make available for staff","value":"3"},
+{"source":"Teacher Kiosk","target":"Make available for staff","value":"3"},
 {"source":"Teacher Kiosk","target":"Academic reporting","value":"5"},
 {"source":"Teacher Kiosk","target":"Compliance reporting","value":"2"},
 {"source":"Teacher Kiosk","target":"Personal preference","value":"5"},
-{"source":"Teacher Kiosk","target":"Make avaiable for staff","value":"3"},
-{"source":"Teacher Kiosk","target":"Make avaiable for students","value":"6"}
+{"source":"Teacher Kiosk","target":"Make available for staff","value":"3"},
+{"source":"Teacher Kiosk","target":"Make available for students","value":"6"}
 ] ,
 "nodes": [
 {"name":"ManageBac"},
